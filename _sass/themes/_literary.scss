@@ -1,0 +1,23 @@
+// LITERARY — warm paper tones, muted ink and leather, a quieter register.
+:root {
+  --bg:        #F6F1E6;
+  --bg-2:      #EDE3CF;
+  --accent:      #8A5A3B;
+  --accent-dim:  #6B4429;
+  --accent-2:     #3F4A3E;
+  --accent-2-dim: #2E3730;
+  --surface:     #FBF8F1;
+  --surface-dim: #EFE7D6;
+  --text:               #2A2419;
+  --text-dim:           #6B6250;
+  --text-on-surface:    #2A2419;
+  --text-on-surface-dim:#6B6250;
+  --card-light: #FFFFFF;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body:    "Lora", Georgia, serif;
+  --font-mono:    "IBM Plex Mono", "Courier New", monospace;
+
+  --radius: 3px;
+  --heading-tracking: 0.01em;
+}

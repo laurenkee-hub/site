@@ -1,0 +1,10 @@
+<div class="ticket">
+  <div class="ticket__main">
+    {% if include.label %}<div class="ticket__label">{{ include.label }}</div>{% endif %}
+    <h3 class="ticket__title">{{ include.title }}</h3>
+    {% if include.meta %}<div class="ticket__meta">{{ include.meta }}</div>{% endif %}
+    {% if include.desc %}<p class="ticket__desc">{{ include.desc }}</p>{% endif %}
+    {% if include.link and include.link_text %}<a href="{{ include.link }}">{{ include.link_text }} &rarr;</a>{% endif %}
+  </div>
+  <div class="ticket__stub">{{ include.stub | default: "Admit One" }}</div>
+</div>

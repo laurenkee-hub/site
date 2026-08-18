@@ -1,0 +1,23 @@
+// MINIMAL — near-white, near-black, one considered accent, quiet type.
+:root {
+  --bg:        #FFFFFF;
+  --bg-2:      #F7F7F5;
+  --accent:      #2B4C7E;
+  --accent-dim:  #1F3A61;
+  --accent-2:     #111111;
+  --accent-2-dim: #000000;
+  --surface:     #FAFAFA;
+  --surface-dim: #EFEFEF;
+  --text:               #111111;
+  --text-dim:           #6B6B6B;
+  --text-on-surface:    #111111;
+  --text-on-surface-dim:#6B6B6B;
+  --card-light: #FFFFFF;
+
+  --font-display: "Space Grotesk", Arial, sans-serif;
+  --font-body:    "Inter", Helvetica, Arial, sans-serif;
+  --font-mono:    "IBM Plex Mono", "Courier New", monospace;
+
+  --radius: 8px;
+  --heading-tracking: 0em;
+}

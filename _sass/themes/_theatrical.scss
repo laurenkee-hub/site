@@ -1,0 +1,24 @@
+// THEATRICAL — bold, high-contrast, marquee-and-velvet.
+// Dark stage background, marquee gold, deep curtain red.
+:root {
+  --bg:        #0B0B0C;
+  --bg-2:      #16151A;
+  --accent:      #E8B84B;
+  --accent-dim:  #B98F35;
+  --accent-2:     #7A1428;
+  --accent-2-dim: #5C0F1F;
+  --surface:     #F2EAD9;
+  --surface-dim: #E7DBC0;
+  --text:               #F2EAD9;
+  --text-dim:           #C9C2B2;
+  --text-on-surface:    #1A1712;
+  --text-on-surface-dim:#55503F;
+  --card-light: #FFFFFF;
+
+  --font-display: "Anton", "Arial Narrow", sans-serif;
+  --font-body:    "Source Serif 4", Georgia, serif;
+  --font-mono:    "IBM Plex Mono", "Courier New", monospace;
+
+  --radius: 2px;
+  --heading-tracking: 0.03em;
+}

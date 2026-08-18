@@ -1,0 +1,63 @@
+title: "Lauren Kee"
+tagline: "Storyteller. Solo performer of DEALBREAKER."
+description: >-
+  Official site for storyteller and solo performer Lauren Kee —
+  home of the solo show DEALBREAKER, storytelling workshops,
+  partnership & booking info, and selected writing.
+url: "https://www.laurenkee.com"
+baseurl: "" # keep empty — custom domain sites are served from the root
+
+author: "Lauren Kee"
+email: "hello@laurenkee.com"
+
+# --- Theme ---
+# Controls the whole site's color palette, fonts, and corner radius in one
+# place. Change this, save, push — the whole site re-skins on the next
+# build. Options:
+#   "theatrical" — bold, dark stage, marquee gold, deep red (default)
+#   "literary"   — warm cream paper, muted ink brown, forest green
+#   "minimal"    — white space, near-black, one considered accent
+#   "blush"      — raspberry & apricot, romantic and pillowy-soft
+#   "meadow"     — dusty rose & sage, quiet botanical warmth
+#   "sherbet"    — coral & teal, bright citrus playfulness
+theme_name: "meadow"
+
+# --- Social / contact — replace with your real info ---
+social:
+  email: "hello@laurenkee.com"
+  instagram: "https://instagram.com/yourhandle"
+  youtube: ""
+  newsletter: ""
+
+# --- Collections ---
+collections:
+  writing:
+    output: true
+    permalink: /writing/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "writing"
+    values:
+      layout: "writing"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# --- Build settings ---
+markdown: kramdown
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

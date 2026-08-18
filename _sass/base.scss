@@ -1,0 +1,448 @@
+/* =========================================================
+   BASE — structural styles only. All color, type, and radius
+   decisions live in the active theme partial (_sass/themes/).
+   Swap themes in _config.yml, not here.
+   ========================================================= */
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--text); }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: var(--heading-tracking);
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 0 0 0.5em;
+}
+
+h1 { font-size: clamp(2.6rem, 7vw, 5.5rem); }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+h3 { font-size: 1.3rem; letter-spacing: calc(var(--heading-tracking) + 0.02em); }
+
+p { margin: 0 0 1.2em; }
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9em;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap;
+}
+.skip-link {
+  position: absolute; top: -40px; left: 8px; z-index: 100;
+  background: var(--accent); color: var(--bg);
+  padding: 8px 14px; font-family: var(--font-mono); font-size: 0.85rem;
+}
+.skip-link:focus { top: 8px; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   ACCENT DOT STRIP — signature ornament, recolors per theme
+   ========================================================= */
+.bulb-strip {
+  height: 10px;
+  background-image: radial-gradient(circle, var(--accent) 2px, transparent 2.4px);
+  background-size: 22px 10px;
+  background-repeat: repeat-x;
+  background-position: center;
+  opacity: 0.9;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .bulb-strip.animated { animation: twinkle 2.4s steps(2) infinite; }
+}
+@keyframes twinkle {
+  50% { background-position: 11px center; opacity: 0.55; }
+}
+
+/* =========================================================
+   SITE HEADER / PROGRAM NAV
+   ========================================================= */
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.site-brand {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 1.3rem;
+  color: var(--text);
+}
+.site-brand span { color: var(--accent); }
+
+.program-nav {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+  margin: 0; padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.program-nav a {
+  color: var(--text-dim);
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+}
+.program-nav a:hover,
+.program-nav a[aria-current="page"] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--accent-dim);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .program-nav {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--bg-2);
+    border-bottom: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+    padding: 8px 28px 18px;
+  }
+  .program-nav.is-open { display: flex; }
+  .program-nav a { display: block; padding: 10px 0; border-bottom: 1px solid color-mix(in srgb, var(--text) 6%, transparent); }
+  .nav-toggle { display: inline-block; }
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero {
+  padding: 90px 0 70px;
+  background:
+    radial-gradient(ellipse at 50% -10%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 60%),
+    var(--bg);
+  text-align: center;
+  position: relative;
+}
+.hero h1 { color: var(--text); }
+.hero .tagline {
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--text-dim);
+  font-size: 1.25rem;
+  max-width: 46ch;
+  margin: 18px auto 32px;
+}
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 13px 26px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--accent);
+  background: transparent;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.btn:hover { background: var(--accent); color: var(--bg); }
+.btn--solid { background: var(--accent); color: var(--bg); }
+.btn--solid:hover { background: var(--text); border-color: var(--text); }
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+.section { padding: 70px 0; }
+.section--paper {
+  background: var(--surface);
+  color: var(--text-on-surface);
+}
+.section--paper h2, .section--paper h1 { color: var(--text-on-surface); }
+.section--paper .eyebrow { color: var(--accent-2); }
+.section--paper a { color: var(--accent-2); }
+.section--paper a:hover { color: var(--text-on-surface); }
+
+.section-head { margin-bottom: 40px; max-width: 62ch; }
+
+.tear {
+  border: none;
+  border-top: 2px dashed color-mix(in srgb, var(--accent) 35%, transparent);
+  margin: 0;
+  position: relative;
+}
+.tear--paper { border-top-color: color-mix(in srgb, var(--text-on-surface) 20%, transparent); }
+
+/* =========================================================
+   TICKET STUB CARD — signature repeating component
+   ========================================================= */
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 26px;
+}
+
+.ticket {
+  display: flex;
+  background: var(--bg-2);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: var(--radius);
+  position: relative;
+  overflow: hidden;
+}
+.section--paper .ticket {
+  background: var(--card-light);
+  border-color: color-mix(in srgb, var(--text-on-surface) 18%, transparent);
+}
+
+.ticket__main { flex: 1; padding: 22px 20px; }
+.ticket__label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.section--paper .ticket__label { color: var(--accent-2); }
+.ticket__title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 8px;
+}
+.ticket__meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+}
+.section--paper .ticket__meta { color: var(--text-on-surface-dim); }
+.ticket__desc { font-size: 0.96rem; margin-bottom: 10px; }
+
+.ticket__stub {
+  width: 64px;
+  flex-shrink: 0;
+  border-left: 2px dashed color-mix(in srgb, var(--accent) 40%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+.section--paper .ticket__stub {
+  border-left-color: color-mix(in srgb, var(--text-on-surface) 25%, transparent);
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent-2) 5%, transparent);
+}
+
+.ticket::before, .ticket::after {
+  content: "";
+  position: absolute;
+  width: 14px; height: 14px;
+  background: var(--bg);
+  border-radius: 50%;
+  right: 62px;
+}
+.section--paper .ticket::before,
+.section--paper .ticket::after { background: var(--surface); }
+.ticket::before { top: -7px; }
+.ticket::after { bottom: -7px; }
+
+/* =========================================================
+   TWO COLUMN / BIO
+   ========================================================= */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 50px;
+  align-items: start;
+}
+@media (max-width: 720px) { .split { grid-template-columns: 1fr; } }
+
+.portrait {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background: linear-gradient(160deg, var(--accent-2), var(--accent-2-dim));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: color-mix(in srgb, var(--text) 50%, transparent);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: var(--radius);
+}
+
+/* =========================================================
+   PULL QUOTE
+   ========================================================= */
+.pull-quote {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 3.4vw, 2.4rem);
+  line-height: 1.25;
+  color: var(--accent);
+  border-left: 4px solid var(--accent);
+  padding-left: 26px;
+  margin: 0;
+}
+.pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-top: 14px;
+}
+
+/* =========================================================
+   CONTACT FORM
+   ========================================================= */
+.form-field { margin-bottom: 20px; }
+.form-field label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+.section--paper .form-field label { color: var(--accent-2); }
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 12px 14px;
+}
+.section--paper .form-field input,
+.section--paper .form-field textarea,
+.section--paper .form-field select {
+  background: var(--card-light);
+  border-color: color-mix(in srgb, var(--text-on-surface) 30%, transparent);
+  color: var(--text-on-surface);
+}
+.form-field input:focus,
+.form-field textarea:focus { outline: 2px solid var(--accent); }
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.site-footer {
+  background: var(--bg-2);
+  border-top: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  padding: 44px 0 30px;
+  text-align: center;
+}
+.site-footer .site-brand { display: block; margin-bottom: 10px; }
+.footer-links {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  list-style: none;
+  padding: 0; margin: 16px 0;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.footer-links a { color: var(--text-dim); text-decoration: none; }
+.footer-links a:hover { color: var(--accent); }
+.footer-fine {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: color-mix(in srgb, var(--text-dim) 70%, transparent);
+  letter-spacing: 0.06em;
+}
+
+/* =========================================================
+   UTILITIES
+   ========================================================= */
+.stack { display: flex; flex-direction: column; gap: 14px; }
+.center { text-align: center; }
+.mt-0 { margin-top: 0; }
+.narrow { max-width: 64ch; }

@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="site-brand">{{ site.author }}</span>
+    <ul class="footer-links">
+      <li><a href="mailto:{{ site.social.email }}">Email</a></li>
+      {% if site.social.instagram and site.social.instagram != "" %}<li><a href="{{ site.social.instagram }}">Instagram</a></li>{% endif %}
+      {% if site.social.youtube and site.social.youtube != "" %}<li><a href="{{ site.social.youtube }}">Video</a></li>{% endif %}
+      <li><a href="{{ '/contact/' | relative_url }}">Booking &amp; contact</a></li>
+    </ul>
+    <p class="footer-fine">&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.</p>
+  </div>
+</footer>
