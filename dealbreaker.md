@@ -19,11 +19,6 @@ permalink: /dealbreaker/
       <h2 class="mt-0">Part storytelling. Part comedy. 100% stigma-squashing.</h2>
       <p>Dealbreaker blends storytelling with comedy to share what it's like dating with herpes, handling disclosure, and finding a path to healing. It's for anyone who's ever feared they might die alone because of herpes — or anything else. The show asks: how do we learn to accept ourselves when it feels like no one else does?</p>
       <p>Directed by <a href="https://www.francescasobrer.com/">Francesca Sobrer</a>. Creative consultation by <a href="https://www.instagram.com/squidpickle/?hl=en">Lisa Burton</a>.</p>
-      <ul>
-        <li><strong>Running time:</strong> 60 minutes, no intermission</li>
-        <li><strong>Content notes:</strong> adult language, frank discussion of sex and STIs — recommended for mature audiences (18+)</li>
-        <li><strong>Follow along:</strong> <a href="{{ site.social.instagram }}">@_laurentellsstories</a> on Instagram</li>
-      </ul>
     </div>
   </div>
 </section>
