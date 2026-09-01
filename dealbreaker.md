@@ -14,7 +14,7 @@ permalink: /dealbreaker/
 
 <section class="section">
   <div class="wrap split">
-    <div class="portrait" aria-hidden="true">[ Production photo ]</div>
+    <img src="{{ '/assets/images/dealbreaker-production-1.jpg' | relative_url }}" alt="Lauren Kee performing Dealbreaker" style="width:100%; height:auto; display:block; border-radius: var(--radius);">
     <div>
       <p class="eyebrow">About The Show</p>
       <h2 class="mt-0">Part storytelling. Part comedy. 100% stigma-squashing.</h2>
