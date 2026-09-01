@@ -1,5 +1,6 @@
 <div class="ticket">
   <div class="ticket__main">
+    {% if include.badge %}<div class="ticket__badge">{{ include.badge }}</div>{% endif %}
     {% if include.label %}<div class="ticket__label">{{ include.label }}</div>{% endif %}
     <h3 class="ticket__title">{{ include.title }}</h3>
     {% if include.meta %}<div class="ticket__meta">{{ include.meta }}</div>{% endif %}
