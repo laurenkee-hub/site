@@ -14,7 +14,7 @@ permalink: /about/
 
 <section class="section">
   <div class="wrap split">
-    <div class="portrait" aria-hidden="true">[ Portrait photo ]</div>
+    <img src="{{ '/assets/images/lauren-about-portrait.jpg' | relative_url }}" alt="Lauren Kee" style="border-radius: var(--radius);">
     <div>
       <p class="eyebrow">Bio</p>
       <h2 class="mt-0">Hi, I'm Lauren.</h2>
