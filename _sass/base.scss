@@ -446,3 +446,20 @@ p { margin: 0 0 1.2em; }
 .center { text-align: center; }
 .mt-0 { margin-top: 0; }
 .narrow { max-width: 64ch; }
+/* Sold-out stamp on ticket cards */
+.ticket__badge {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  transform: rotate(-6deg);
+  border: 2px solid var(--accent-2);
+  color: var(--accent-2);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 2px 9px;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--accent-2) 8%, transparent);
+}
+.ticket__main { position: relative; padding-top: 40px; }
