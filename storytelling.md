@@ -5,8 +5,8 @@ permalink: /storytelling/
 
 <section class="hero" style="padding: 70px 0 50px;">
   <div class="wrap">
-    <p class="eyebrow">Storytelling</p>
-    <p class="tagline">Stories about growth, girlhood, and the messy moments in between.</p>
+    <h1>Storytelling</h1>
+<p class="tagline">Stories about growth, girlhood, and the messy moments in between.</p>
   </div>
 </section>
 <div class="bulb-strip" aria-hidden="true"></div>
