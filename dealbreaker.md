@@ -5,7 +5,6 @@ permalink: /dealbreaker/
 
 <section class="hero" style="padding: 70px 0 50px;">
   <div class="wrap">
-    <p class="eyebrow">Solo Show</p>
     <h1>Dealbreaker</h1>
     <p class="tagline">A one-woman show about herpes, heartbreak, and the death of the one-night stand.</p>
   </div>
@@ -19,10 +18,9 @@ permalink: /dealbreaker/
       <p class="eyebrow">About The Show</p>
       <h2 class="mt-0">Part storytelling. Part comedy. 100% stigma-squashing.</h2>
       <p>Dealbreaker blends storytelling with comedy to share what it's like dating with herpes, handling disclosure, and finding a path to healing. It's for anyone who's ever feared they might die alone because of herpes — or anything else. The show asks: how do we learn to accept ourselves when it feels like no one else does?</p>
-      <p>Directed by Francesca Sobrer. Creative consultation by Lisa Burton.</p>
+      <p>Directed by <a href="https://www.francescasobrer.com/">Francesca Sobrer</a>. Creative consultation by <a href="https://www.instagram.com/squidpickle/?hl=en">Lisa Burton</a>.</p>
       <ul>
         <li><strong>Running time:</strong> 60 minutes, no intermission</li>
-        <li><strong>Cast:</strong> 1 performer</li>
         <li><strong>Content notes:</strong> adult language, frank discussion of sex and STIs — recommended for mature audiences (18+)</li>
         <li><strong>Follow along:</strong> <a href="{{ site.social.instagram }}">@_laurentellsstories</a> on Instagram</li>
       </ul>
