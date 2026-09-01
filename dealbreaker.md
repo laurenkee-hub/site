@@ -14,7 +14,7 @@ permalink: /dealbreaker/
 
 <section class="section">
   <div class="wrap split">
-    <img src="{{ '/assets/images/dealbreaker-production-1.jpg' | relative_url }}" alt="Lauren Kee performing Dealbreaker" style="border-radius: var(--radius);">
+    <div class="portrait" aria-hidden="true">[ Production photo ]</div>
     <div>
       <p class="eyebrow">About The Show</p>
       <h2 class="mt-0">60 minutes. One performer.</h2>
@@ -36,7 +36,7 @@ permalink: /dealbreaker/
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Upcoming Performances</p>
-      <h2>Tour dates</h2>
+      <h2>See it live</h2>
     </div>
 
     <div class="ticket-grid">
@@ -67,7 +67,56 @@ permalink: /dealbreaker/
         link_text="Tickets"
         stub="Oct 17" %}
     </div>
+  </div>
+</section>
 
-    <p style="margin-top: 30px;">Want Dealbreaker at your venue? <a href="mailto:{{ site.social.email }}">Get in touch.</a></p>
+<hr class="tear tear--paper">
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Past Performances</p>
+      <h2>Where it's played</h2>
+    </div>
+
+    <div class="ticket-grid">
+      {% include ticket.html
+        badge="Sold Out"
+        label="Feb 14 & 15, 2026"
+        title="Solo Sunday"
+        stub="Feb 14" %}
+
+      {% include ticket.html
+        label="March 21, 2026"
+        title="Something Positive for Positive People (SPFPP) Herpes Stigma Expo"
+        stub="Mar 21" %}
+
+      {% include ticket.html
+        badge="Sold Out"
+        label="March 22, 2026"
+        title="The Stonewall Inn"
+        stub="Mar 22" %}
+
+      {% include ticket.html
+        badge="Sold Out"
+        label="April 26, 2026 &middot; 3pm & 5pm"
+        title="The Den Theatre"
+        stub="Apr 26" %}
+
+      {% include ticket.html
+        label="May 2026"
+        title="EVOLUTION AAPI Arts Festival"
+        stub="May" %}
+
+      {% include ticket.html
+        label="May 2026"
+        title="Northwestern University Human Sexuality Class"
+        stub="May" %}
+
+      {% include ticket.html
+        label="July 18 & 19, 2026"
+        title="Harrisburg Fringe Festival"
+        stub="Jul 18" %}
+    </div>
   </div>
 </section>
