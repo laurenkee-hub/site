@@ -7,7 +7,7 @@ permalink: /about/
   <div class="wrap">
     <p class="eyebrow">About</p>
     <h1>{{ site.author }}</h1>
-    <p class="tagline">Storyteller, solo performer, and workshop facilitator.</p>
+    <p class="tagline">Storyteller, solo performer, and producer.</p>
   </div>
 </section>
 <div class="bulb-strip" aria-hidden="true"></div>
@@ -17,28 +17,11 @@ permalink: /about/
     <div class="portrait" aria-hidden="true">[ Portrait photo ]</div>
     <div>
       <p class="eyebrow">Bio</p>
-      <h2 class="mt-0">Long bio</h2>
-      <p>Replace this with your full biography — background, training, where you're based, and how you came to storytelling. This is usually 3–5 paragraphs and can be reused as your official presenter bio for programs and press.</p>
-      <p>Second paragraph: mention specific milestones — festivals you've performed at, awards, press coverage, notable collaborators. Presenters and journalists often lift this paragraph directly, so keep it accurate and specific.</p>
-      <p>Third paragraph: something more personal about your approach to storytelling and why you make the work you make.</p>
-
-      <h3>Press &amp; media</h3>
-      <p>Replace with links to press coverage, or remove this section if you don't have any yet.</p>
-      <ul>
-        <li><a href="#">Publication name — article title</a></li>
-        <li><a href="#">Publication name — article title</a></li>
-      </ul>
+      <h2 class="mt-0">Hi, I'm Lauren.</h2>
+      <p>Lauren Kee (she/her) is a Chicago-based storyteller, solo performer, and producer. Her work combines humor and vulnerability, using specific imagery and metaphor to tell coming-of-age stories that stick with people.</p>
+      <p>She's the creator and performer of <em>Dealbreaker</em>, a one-woman show about herpes, heartbreak, and the death of the one-night stand, directed by Francesca Sobrer with creative consultation by Lisa Burton.</p>
+      <p>Lauren is committed to bringing storytelling to young people and lowering the barrier to entry for emerging artists.</p>
+      <p><a href="{{ site.social.instagram }}">Follow along on Instagram</a> or <a href="mailto:{{ site.social.email }}">reach out directly</a>.</p>
     </div>
-  </div>
-</section>
-
-<hr class="tear">
-
-<section class="section section--paper center">
-  <div class="wrap">
-    <p class="eyebrow">Downloads</p>
-    <h2>Press kit</h2>
-    <p class="narrow" style="margin-left:auto; margin-right:auto;">Headshots, production photos, and a one-page bio for presenters and press. Replace this link once you've uploaded a real press kit PDF or folder.</p>
-    <a class="btn btn--solid" href="#">Download press kit</a>
   </div>
 </section>
