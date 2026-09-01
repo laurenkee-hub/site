@@ -46,11 +46,11 @@ permalink: /dealbreaker/
 
 <hr class="tear">
 
-<section class="section section--paper">
+<section class="section section--paper" id="upcoming">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Upcoming Performances</p>
-      <h2>See it live</h2>
+      <h2>Upcoming Performances</h2>
     </div>
 
     <div class="ticket-grid">
