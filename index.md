@@ -9,7 +9,7 @@ permalink: /
     <h1>{{ site.author }}</h1>
     <p class="tagline">Creator and performer of the solo show <strong>Dealbreaker</strong>.</p>
     <div class="hero-actions">
-      <a class="btn btn--solid" href="{{ '/dealbreaker/' | relative_url }}">See the show</a>
+      <a class="btn btn--solid" href="{{ '/dealbreaker/' | relative_url }}#upcoming">Upcoming Shows</a>
       <a class="btn" href="mailto:{{ site.social.email }}">Get in touch</a>
     </div>
   </div>
