@@ -7,7 +7,7 @@ permalink: /dealbreaker/
   <div class="wrap">
     <p class="eyebrow">Solo Show</p>
     <h1>Dealbreaker</h1>
-    <p class="tagline">A true story about the deals we make with ourselves — and the ones we finally refuse to.</p>
+    <p class="tagline">A one-woman show about herpes, heartbreak, and the death of the one-night stand.</p>
   </div>
 </section>
 <div class="bulb-strip" aria-hidden="true"></div>
@@ -17,14 +17,14 @@ permalink: /dealbreaker/
     <div class="portrait" aria-hidden="true">[ Production photo ]</div>
     <div>
       <p class="eyebrow">About The Show</p>
-      <h2 class="mt-0">70 minutes. One performer. No exit.</h2>
-      <p>Replace this with your real show description: what Dealbreaker is about, the world it takes place in, and why it exists. Two or three paragraphs is plenty — presenters and audiences are deciding whether to trust an hour with you.</p>
-      <p>Note the practicals here too: running time, whether there's an intermission, content notes, and whether it's followed by a talkback.</p>
+      <h2 class="mt-0">60 minutes. One performer.</h2>
+      <p>Dealbreaker blends storytelling with comedy to share what it's like dating with herpes, handling disclosure, and finding a path to healing. It's for anyone who's ever feared they might die alone because of herpes — or anything else. The show asks: how do we learn to accept ourselves when it feels like no one else does?</p>
+      <p>Directed by Francesca Sobrer. Creative consultation by Lisa Burton.</p>
       <ul>
-        <li><strong>Running time:</strong> 70 minutes, no intermission</li>
+        <li><strong>Running time:</strong> 60 minutes, no intermission</li>
         <li><strong>Cast:</strong> 1 performer</li>
-        <li><strong>Best for:</strong> theaters, storytelling festivals, black box &amp; found spaces</li>
-        <li><strong>Content notes:</strong> replace with your own — e.g. strong language, references to &hellip;</li>
+        <li><strong>Content notes:</strong> adult language, frank discussion of sex and STIs — recommended for mature audiences (18+)</li>
+        <li><strong>Follow along:</strong> <a href="{{ site.social.instagram }}">@_laurentellsstories</a> on Instagram</li>
       </ul>
     </div>
   </div>
@@ -34,63 +34,40 @@ permalink: /dealbreaker/
 
 <section class="section section--paper">
   <div class="wrap">
-    <blockquote class="pull-quote">
-      "Replace this with a real pull-quote from a review, presenter, or audience member."
-      <cite>— Publication or Venue Name</cite>
-    </blockquote>
-  </div>
-</section>
-
-<hr class="tear tear--paper">
-
-<section class="section">
-  <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Upcoming Performances</p>
       <h2>Tour dates</h2>
-      <p>Add or remove ticket cards below as your schedule changes — each one is a single date, venue, and link.</p>
     </div>
 
     <div class="ticket-grid">
       {% include ticket.html
-        label="Sept 12, 2026 &middot; 7:30pm"
-        title="City Storytelling Festival"
+        label="Sept 19 & 20, 2026"
+        title="Rochester Fringe Festival"
+        meta="Memorial Art Gallery, Lynne Lovejoy Parlor &middot; Rochester, NY"
+        desc="Sat 9/19 at 4:00pm, Sun 9/20 at 3:30pm. 18 and over."
+        link="https://rochesterfringe.com/tickets-and-shows/dealbreaker"
+        link_text="Tickets"
+        stub="Sept 19" %}
+
+      {% include ticket.html
+        label="Sept 24 & 26, 2026"
+        title="Elgin Fringe Festival"
+        meta="EPH Pub 217 &middot; Elgin, IL"
+        desc="Wed 9/24 at 7:30pm, Fri 9/26 at 9:00pm. Rated R — adult language, sexual content."
+        link="https://www.elginfringefestival.com/product-page/dealbreaker-by-lauren-kee"
+        link_text="Tickets"
+        stub="Sept 24" %}
+
+      {% include ticket.html
+        label="Oct 17, 2026"
+        title="Not Alone Anymore: Asian American Solo Show Festival"
         meta="Chicago, IL"
-        desc="Presented as part of the festival's mainstage lineup."
-        link="#"
+        desc="Presented as part of this Chicago solo-show festival lineup."
+        link="https://www.zeffy.com/en-US/ticketing/not-alone-anymore-asian-american-solo-show-festival"
         link_text="Tickets"
-        stub="Sept 12" %}
-
-      {% include ticket.html
-        label="Oct 4, 2026 &middot; 8:00pm"
-        title="The Black Box Theater"
-        meta="Minneapolis, MN"
-        desc="Single night, followed by a talkback with the audience."
-        link="#"
-        link_text="Tickets"
-        stub="Oct 4" %}
-
-      {% include ticket.html
-        label="Nov 1, 2026 &middot; 7:00pm"
-        title="University Arts Series"
-        meta="Madison, WI"
-        desc="Presented with a post-show Q&amp;A for students."
-        link="#"
-        link_text="Details"
-        stub="Nov 1" %}
+        stub="Oct 17" %}
     </div>
 
-    <p style="margin-top: 30px;">Don't see a date near you? <a href="{{ '/contact/' | relative_url }}">Ask about bringing Dealbreaker to your venue.</a></p>
-  </div>
-</section>
-
-<hr class="tear">
-
-<section class="section section--paper">
-  <div class="wrap center">
-    <p class="eyebrow">Presenters</p>
-    <h2>Booking a performance</h2>
-    <p class="narrow" style="margin-left:auto; margin-right:auto;">Full tech rider, fee structure, and past presenting partners are on the partnerships page.</p>
-    <a class="btn btn--solid" href="{{ '/partnerships/' | relative_url }}">Partnership &amp; booking info</a>
+    <p style="margin-top: 30px;">Want Dealbreaker at your venue? <a href="mailto:{{ site.social.email }}">Get in touch.</a></p>
   </div>
 </section>
