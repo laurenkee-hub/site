@@ -17,7 +17,7 @@ permalink: /dealbreaker/
     <div class="portrait" aria-hidden="true">[ Production photo ]</div>
     <div>
       <p class="eyebrow">About The Show</p>
-      <h2 class="mt-0">60 minutes. One performer.</h2>
+      <h2 class="mt-0">Part storytelling. Part comedy. 100% stigma-squashing.</h2>
       <p>Dealbreaker blends storytelling with comedy to share what it's like dating with herpes, handling disclosure, and finding a path to healing. It's for anyone who's ever feared they might die alone because of herpes — or anything else. The show asks: how do we learn to accept ourselves when it feels like no one else does?</p>
       <p>Directed by Francesca Sobrer. Creative consultation by Lisa Burton.</p>
       <ul>
