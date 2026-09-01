@@ -7,6 +7,7 @@ permalink: /
   <div class="wrap">
     <p class="eyebrow">Storyteller &middot; Producer &middot; Facilitator</p>
     <h1>{{ site.author }}</h1>
+    <p class="tagline">Creator and performer of the solo show <strong>Dealbreaker</strong>.</p>
     <div class="hero-actions">
       <a class="btn btn--solid" href="{{ '/dealbreaker/' | relative_url }}">See the show</a>
       <a class="btn" href="mailto:{{ site.social.email }}">Get in touch</a>
@@ -17,12 +18,11 @@ permalink: /
 
 <section class="section">
   <div class="wrap split">
-    <img src="{{ '/assets/images/lauren-home-portrait.jpg' | relative_url }}" alt="Lauren Kee" style="width:100%; height:auto; display:block; border-radius: var(--radius);">
+    <div class="portrait" aria-hidden="true">[ Portrait photo ]</div>
     <div>
-      <p class="eyebrow">About</p>
       <h2 class="mt-0">Hi, I'm Lauren!</h2>
       <p>I'm a Chicago-based storyteller, solo performer, producer, and facilitator. I love telling coming-of-age stories that blend humor, vulnerability, and healing.</p>
-      <p><a href="{{ '/about/' | relative_url }}">Read the full bio &rarr;</a></p>
+      <p><a href="{{ '/about/' | relative_url }}">Learn more &rarr;</a></p>
     </div>
   </div>
 </section>
