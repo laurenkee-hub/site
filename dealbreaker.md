@@ -36,9 +36,6 @@ permalink: /dealbreaker/
     </div>
   </div>
 </section>
-
-<hr class="tear">
-
 <section class="section section--paper" id="upcoming">
   <div class="wrap">
     <div class="section-head">
@@ -48,24 +45,6 @@ permalink: /dealbreaker/
 
     <div class="ticket-grid">
       {% include ticket.html
-        label="Sept 19 & 20, 2026"
-        title="Rochester Fringe Festival"
-        meta="Memorial Art Gallery, Lynne Lovejoy Parlor &middot; Rochester, NY"
-        desc="Sat 9/19 at 4:00pm, Sun 9/20 at 3:30pm. 18 and over."
-        link="https://rochesterfringe.com/tickets-and-shows/dealbreaker"
-        link_text="Tickets"
-        stub="Sept 19" %}
-
-      {% include ticket.html
-        label="Sept 24 & 26, 2026"
-        title="Elgin Fringe Festival"
-        meta="EPH Pub 217 &middot; Elgin, IL"
-        desc="Wed 9/24 at 7:30pm, Fri 9/26 at 9:00pm. Rated R — adult language, sexual content."
-        link="https://www.elginfringefestival.com/product-page/dealbreaker-by-lauren-kee"
-        link_text="Tickets"
-        stub="Sept 24" %}
-
-      {% include ticket.html
         label="Oct 17, 2026"
         title="Not Alone Anymore: Asian American Solo Show Festival"
         meta="Chicago, IL"
@@ -73,6 +52,11 @@ permalink: /dealbreaker/
         link="https://www.zeffy.com/en-US/ticketing/not-alone-anymore-asian-american-solo-show-festival"
         link_text="Tickets"
         stub="Oct 17" %}
+
+      {% include ticket.html
+        label="Jan 16, 2027"
+        title="Something Positive for Positive People (SPFPP) Herpes Stigma Expo"
+        stub="Jan 16" %}
     </div>
   </div>
 </section>
@@ -82,8 +66,7 @@ permalink: /dealbreaker/
 <section class="section">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Past Performances</p>
-      <h2>Where it's played</h2>
+      <h2>Past Performances</h2>
     </div>
 
     <div class="ticket-grid">
@@ -121,9 +104,24 @@ permalink: /dealbreaker/
         stub="May" %}
 
       {% include ticket.html
+        label="July 2026"
+        title="Redtwist Theatre Solo Show Incubator"
+        stub="Jul" %}
+
+      {% include ticket.html
         label="July 18 & 19, 2026"
         title="Harrisburg Fringe Festival"
         stub="Jul 18" %}
+
+      {% include ticket.html
+        label="Sept 19 & 20, 2026"
+        title="Rochester Fringe Festival"
+        stub="Sept 19" %}
+
+      {% include ticket.html
+        label="Sept 24 & 26, 2026"
+        title="Elgin Fringe Festival"
+        stub="Sept 24" %}
     </div>
   </div>
 </section>
