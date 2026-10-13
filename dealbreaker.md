@@ -50,13 +50,13 @@ permalink: /dealbreaker/
         meta="Chicago, IL"
         desc="Presented as part of this Chicago solo-show festival lineup."
         link="https://www.zeffy.com/en-US/ticketing/not-alone-anymore-asian-american-solo-show-festival"
-        link_text="Tickets"
-        stub="Oct 17" %}
+        link_text="Tickets" %}
 
       {% include ticket.html
         label="Jan 16, 2027"
         title="Something Positive for Positive People (SPFPP) Herpes Stigma Expo"
-        stub="Jan 16" %}
+        link="https://spfpp.org/expo"
+        link_text="Tickets" %}
     </div>
   </div>
 </section>
@@ -73,55 +73,45 @@ permalink: /dealbreaker/
       {% include ticket.html
         badge="Sold Out"
         label="Feb 14 & 15, 2026"
-        title="Solo Sunday"
-        stub="Feb 14" %}
+        title="Solo Sunday" %}
 
       {% include ticket.html
         label="March 21, 2026"
-        title="Something Positive for Positive People (SPFPP) Herpes Stigma Expo"
-        stub="Mar 21" %}
+        title="Something Positive for Positive People (SPFPP) Herpes Stigma Expo" %}
 
       {% include ticket.html
         badge="Sold Out"
         label="March 22, 2026"
-        title="The Stonewall Inn"
-        stub="Mar 22" %}
+        title="The Stonewall Inn" %}
 
       {% include ticket.html
         badge="Sold Out"
         label="April 26, 2026 &middot; 3pm & 5pm"
-        title="The Den Theatre"
-        stub="Apr 26" %}
+        title="The Den Theatre" %}
 
       {% include ticket.html
         label="May 2026"
-        title="EVOLUTION AAPI Arts Festival"
-        stub="May" %}
+        title="EVOLUTION AAPI Arts Festival" %}
 
       {% include ticket.html
         label="May 2026"
-        title="Northwestern University Human Sexuality Class"
-        stub="May" %}
+        title="Northwestern University Human Sexuality Class" %}
 
       {% include ticket.html
         label="July 2026"
-        title="Redtwist Theatre Solo Show Incubator"
-        stub="Jul" %}
+        title="Redtwist Theatre Solo Show Incubator" %}
 
       {% include ticket.html
         label="July 18 & 19, 2026"
-        title="Harrisburg Fringe Festival"
-        stub="Jul 18" %}
+        title="Harrisburg Fringe Festival" %}
 
       {% include ticket.html
         label="Sept 19 & 20, 2026"
-        title="Rochester Fringe Festival"
-        stub="Sept 19" %}
+        title="Rochester Fringe Festival" %}
 
       {% include ticket.html
         label="Sept 24 & 26, 2026"
-        title="Elgin Fringe Festival"
-        stub="Sept 24" %}
+        title="Elgin Fringe Festival" %}
     </div>
   </div>
 </section>
