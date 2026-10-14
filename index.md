@@ -21,7 +21,7 @@ permalink: /
     <img src="{{ '/assets/images/lauren-home-portrait.jpg' | relative_url }}" alt="Lauren Kee" style="width:100%; height:auto; display:block; border-radius: var(--radius);">
     <div>
       <h2 class="mt-0">Hi, I'm Lauren!</h2>
-      <p>I'm a Chicago-based storyteller, solo performer, producer, and facilitator. I love telling coming-of-age stories that blend humor, vulnerability, and healing.</p>
+      <p>I'm a storyteller, solo performer, producer, and facilitator. I love telling coming-of-age stories that blend humor, vulnerability, and healing.</p>
       <p><a href="{{ '/about/' | relative_url }}">Learn more &rarr;</a></p>
     </div>
   </div>
