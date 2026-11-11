@@ -1,0 +1,30 @@
+{% comment %}
+  Shows cards from _data/shows.yml. You don't need to edit this file.
+  Options:
+    type=  "dealbreaker", "storytelling", or leave out for all shows
+    when=  "upcoming" (default) or "past"
+    limit= max number of cards (upcoming only)
+    past_target= id of a past list on the same page; shows that have
+                 passed get moved there automatically
+    empty= message to show when there's nothing upcoming
+    stub_type= "true" to print the show type on the ticket stub
+{% endcomment %}
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign when = include.when | default: "upcoming" %}
+{% assign shows = site.data.shows | sort: "date" %}
+{% if include.type %}{% assign shows = shows | where: "type", include.type %}{% endif %}
+{% assign count = 0 %}
+<div class="ticket-grid" data-show-list="{{ when }}"{% if include.limit %} data-limit="{{ include.limit }}"{% endif %}{% if include.past_target %} data-past-target="{{ include.past_target }}"{% endif %}{% if include.id %} id="{{ include.id }}"{% endif %}>
+{% for s in shows %}
+  {% if when == "past" %}{% if s.date >= today %}{% continue %}{% endif %}{% else %}{% if s.date < today %}{% continue %}{% endif %}{% endif %}
+  {% capture label %}{% if s.label %}{{ s.label }}{% elsif when == "past" %}{{ s.date | date: "%b %-d, %Y" }}{% else %}{{ s.date | date: "%a, %b %-d, %Y" }}{% endif %}{% endcapture %}
+  {% capture meta %}{% if when != "past" %}{{ s.venue }}{% if s.venue and s.time %} &middot; {% endif %}{{ s.time }}{% endif %}{% endcapture %}
+  {% capture stub %}{% if include.stub_type %}{% if s.type == "dealbreaker" %}Dealbreaker{% else %}Storytelling{% endif %}{% endif %}{% endcapture %}
+  {% if when == "past" %}
+    {% include ticket.html date=s.date badge=s.badge label=label title=s.title stub=stub %}
+  {% else %}
+    {% include ticket.html date=s.date badge=s.badge label=label title=s.title meta=meta desc=s.note link=s.link link_text=s.link_text stub=stub %}
+  {% endif %}
+{% endfor %}
+</div>
+{% if include.empty and when != "past" %}<p class="show-list-empty" hidden>{{ include.empty }}</p>{% endif %}

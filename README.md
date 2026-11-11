@@ -135,8 +135,12 @@ you form submissions — no server needed):
 
 ## 7. Ongoing edits
 
-- **Add a tour date:** copy one `{% include ticket.html %}` block in
-  `dealbreaker.md` and edit the label/title/meta/desc.
+- **Add a show (Dealbreaker or storytelling):** open `_data/shows.yml`,
+  copy any block, and change the details. Shows appear on the homepage and
+  the right page automatically, and move to "Past" after their date.
+- **Solo Sunday featured show:** updates itself every morning from
+  solosunday.com (see `.github/workflows/build.yml`). To override it by
+  hand, edit `_data/solo_sunday.yml`.
 - **Add a writing piece:** duplicate a file in `_writing/`, edit the
   front matter, write the piece.
 - **Change colors/fonts:** all design tokens live at the top of

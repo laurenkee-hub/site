@@ -6,6 +6,7 @@ description: >-
   partnership & booking info, and selected writing.
 url: "https://www.laurenkee.com"
 baseurl: "" # keep empty — custom domain sites are served from the root
+timezone: "America/Chicago"
 
 author: "Lauren Kee"
 email: "hello@laurenkee.com"

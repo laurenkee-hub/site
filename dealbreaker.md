@@ -42,22 +42,7 @@ permalink: /dealbreaker/
       <p class="eyebrow">Upcoming Performances</p>
       <h2>Catch a Show</h2>
     </div>
-
-    <div class="ticket-grid">
-      {% include ticket.html
-        label="Oct 17, 2026"
-        title="Not Alone Anymore: Asian American Solo Show Festival"
-        meta="Chicago, IL"
-        desc="Presented as part of this Chicago solo-show festival lineup."
-        link="https://www.zeffy.com/en-US/ticketing/not-alone-anymore-asian-american-solo-show-festival"
-        link_text="Tickets" %}
-
-      {% include ticket.html
-        label="Jan 16, 2027"
-        title="Something Positive for Positive People (SPFPP) Herpes Stigma Expo"
-        link="https://spfpp.org/expo"
-        link_text="Tickets" %}
-    </div>
+    {% include show-list.html type="dealbreaker" past_target="past-shows" empty="New dates coming soon. Follow along on Instagram for announcements." %}
   </div>
 </section>
 
@@ -68,50 +53,6 @@ permalink: /dealbreaker/
     <div class="section-head">
       <h2>Past Performances</h2>
     </div>
-
-    <div class="ticket-grid">
-      {% include ticket.html
-        badge="Sold Out"
-        label="Feb 14 & 15, 2026"
-        title="Solo Sunday" %}
-
-      {% include ticket.html
-        label="March 21, 2026"
-        title="Something Positive for Positive People (SPFPP) Herpes Stigma Expo" %}
-
-      {% include ticket.html
-        badge="Sold Out"
-        label="March 22, 2026"
-        title="The Stonewall Inn" %}
-
-      {% include ticket.html
-        badge="Sold Out"
-        label="April 26, 2026 &middot; 3pm & 5pm"
-        title="The Den Theatre" %}
-
-      {% include ticket.html
-        label="May 2026"
-        title="EVOLUTION AAPI Arts Festival" %}
-
-      {% include ticket.html
-        label="May 2026"
-        title="Northwestern University Human Sexuality Class" %}
-
-      {% include ticket.html
-        label="July 2026"
-        title="Redtwist Theatre Solo Show Incubator" %}
-
-      {% include ticket.html
-        label="July 18 & 19, 2026"
-        title="Harrisburg Fringe Festival" %}
-
-      {% include ticket.html
-        label="Sept 19 & 20, 2026"
-        title="Rochester Fringe Festival" %}
-
-      {% include ticket.html
-        label="Sept 24 & 26, 2026"
-        title="Elgin Fringe Festival" %}
-    </div>
+    {% include show-list.html type="dealbreaker" when="past" id="past-shows" %}
   </div>
 </section>

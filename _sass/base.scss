@@ -354,9 +354,8 @@ p { margin: 0 0 1.2em; }
    ========================================================= */
 .pull-quote {
   font-family: var(--font-display);
-  text-transform: uppercase;
-  font-size: clamp(1.5rem, 3.4vw, 2.4rem);
-  line-height: 1.25;
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  line-height: 1.35;
   color: var(--accent);
   border-left: 4px solid var(--accent);
   padding-left: 26px;
@@ -463,3 +462,75 @@ p { margin: 0 0 1.2em; }
   background: color-mix(in srgb, var(--accent-2) 8%, transparent);
 }
 .ticket__main { position: relative; padding-top: 40px; }
+
+
+/* =========================================================
+   PRESS QUOTES GRID
+   ========================================================= */
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px 48px;
+}
+.pull-quote cite a { color: inherit; }
+
+/* Links row under a section */
+.section-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin: 28px 0 0;
+}
+
+/* Text left, media right on desktop (image-first on mobile is handled by order) */
+.split--flip { grid-template-columns: 1.1fr 1fr; align-items: center; }
+@media (max-width: 720px) { .split--flip { grid-template-columns: 1fr; } }
+
+.show-list-empty { font-style: italic; }
+[hidden] { display: none !important; }
+
+/* =========================================================
+   SOLO SUNDAY FEATURED SHOW
+   ========================================================= */
+.ss-feature {
+  display: grid;
+  grid-template-columns: minmax(180px, 280px) 1fr;
+  gap: 32px;
+  align-items: center;
+  background: var(--card-light);
+  border: 1px solid color-mix(in srgb, var(--text-on-surface) 18%, transparent);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.ss-feature__img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 4px);
+  display: block;
+}
+.ss-feature__kicker {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--accent-2);
+  margin: 0 0 6px;
+}
+.ss-feature__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin: 0;
+}
+.ss-feature__by { margin: 4px 0 12px; color: var(--text-on-surface-dim); }
+.ss-feature__when { font-weight: 700; margin: 0 0 12px; }
+.ss-feature__blurb { max-width: 60ch; }
+@media (max-width: 640px) {
+  .ss-feature { grid-template-columns: 1fr; padding: 18px; }
+  .ss-feature__img { max-width: 320px; }
+}
+
+/* Buttons keep their own colors inside paper sections */
+.section--paper .btn { color: var(--accent); }
+.section--paper .btn:hover,
+.section--paper .btn--solid { color: var(--bg); }
+.ss-feature .hero-actions { justify-content: flex-start; margin-top: 16px; }

@@ -1,0 +1,22 @@
+{% comment %} Featured next Solo Sunday show, from _data/solo_sunday.yml (updated automatically). {% endcomment %}
+{% assign ss = site.data.solo_sunday %}
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% if ss and ss.title and ss.date >= today %}
+<article class="ss-feature" data-expires="{{ ss.date }}">
+  {% if ss.image %}<img class="ss-feature__img" src="{{ ss.image }}" alt="{{ ss.by }}, performer of {{ ss.title }}" loading="lazy">{% endif %}
+  <div class="ss-feature__body">
+    <p class="ss-feature__kicker">Next at Solo Sunday</p>
+    <h3 class="ss-feature__title">{{ ss.title }}</h3>
+    <p class="ss-feature__by">by {{ ss.by }}</p>
+    <p class="ss-feature__when">{{ ss.date | date: "%A, %B %-d, %Y" }}{% if ss.time %} at {{ ss.time }}{% endif %}</p>
+    {% if include.blurb and ss.blurb %}<p class="ss-feature__blurb">{{ ss.blurb }}</p>{% endif %}
+    <div class="hero-actions">
+      <a class="btn btn--solid" href="{{ ss.link | default: 'https://www.solosunday.com/upcoming-shows.html' }}">Get tickets</a>
+      <a class="btn" href="https://www.solosunday.com/upcoming-shows.html">All upcoming shows</a>
+    </div>
+  </div>
+</article>
+<p data-expired-fallback hidden><a class="btn btn--solid" href="https://www.solosunday.com/upcoming-shows.html">See upcoming Solo Sunday shows</a></p>
+{% else %}
+<p><a class="btn btn--solid" href="https://www.solosunday.com/upcoming-shows.html">See upcoming Solo Sunday shows</a></p>
+{% endif %}

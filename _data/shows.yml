@@ -1,0 +1,116 @@
+# ============================================================
+# ALL SHOWS (Dealbreaker AND storytelling) live in this one file.
+#
+# To add a show: copy any block below, paste it, and change the details.
+# The order doesn't matter; the site sorts by date for you.
+# Once a show's date passes, it moves to "Past" (or drops off the
+# storytelling list) on its own. You never have to move it by hand.
+#
+#   date:      YYYY-MM-DD, in quotes. For a multi-day run, use the LAST day.
+#   label:     optional. How the date should read on the card
+#              (e.g. "Feb 14 & 15, 2026"). Leave it out to use the date.
+#   time:      optional, e.g. "7:00 PM" or "Time TBD"
+#   type:      dealbreaker  or  storytelling
+#   title:     name of the show or event
+#   venue:     optional
+#   link:      optional. Tickets or info page
+#   link_text: optional. Button wording (defaults to "Tickets")
+#   note:      optional. Short line, e.g. "Tickets coming soon"
+#   badge:     optional. Stamp on the card, e.g. "Sold Out"
+# ============================================================
+
+# ---------------- DEALBREAKER ----------------
+
+- date: "2026-02-15"
+  label: "Feb 14 & 15, 2026"
+  type: dealbreaker
+  title: "Solo Sunday"
+  badge: "Sold Out"
+
+- date: "2026-03-21"
+  type: dealbreaker
+  title: "Something Positive for Positive People (SPFPP) Herpes Stigma Expo"
+
+- date: "2026-03-22"
+  type: dealbreaker
+  title: "The Stonewall Inn"
+  badge: "Sold Out"
+
+- date: "2026-04-26"
+  label: "April 26, 2026 &middot; 3pm & 5pm"
+  type: dealbreaker
+  title: "The Den Theatre"
+  badge: "Sold Out"
+
+- date: "2026-05-15"
+  label: "May 2026"
+  type: dealbreaker
+  title: "EVOLUTION AAPI Arts Festival"
+
+- date: "2026-05-20"
+  label: "May 2026"
+  type: dealbreaker
+  title: "Northwestern University Human Sexuality Class"
+
+- date: "2026-07-10"
+  label: "July 2026"
+  type: dealbreaker
+  title: "Redtwist Theatre Solo Show Incubator"
+
+- date: "2026-07-19"
+  label: "July 18 & 19, 2026"
+  type: dealbreaker
+  title: "Harrisburg Fringe Festival"
+
+- date: "2026-09-20"
+  label: "Sept 19 & 20, 2026"
+  type: dealbreaker
+  title: "Rochester Fringe Festival"
+
+- date: "2026-09-26"
+  label: "Sept 24 & 26, 2026"
+  type: dealbreaker
+  title: "Elgin Fringe Festival"
+
+- date: "2026-10-17"
+  type: dealbreaker
+  title: "Not Alone Anymore: Asian American Solo Show Festival"
+  venue: "Chicago, IL"
+  link: "https://www.zeffy.com/en-US/ticketing/not-alone-anymore-asian-american-solo-show-festival"
+
+- date: "2027-01-16"
+  type: dealbreaker
+  title: "Something Positive for Positive People (SPFPP) Herpes Stigma Expo"
+  link: "https://spfpp.org/expo"
+
+- date: "2027-02-24"
+  time: "7:00 PM"
+  type: dealbreaker
+  title: "The Skokie"
+  link: "https://www.theskokie.com/events/"
+  link_text: "Venue info"
+  note: "Tickets coming soon"
+
+# ---------------- STORYTELLING & OTHER SHOWS ----------------
+
+- date: "2026-12-13"
+  time: "6:30 PM"
+  type: storytelling
+  title: "The Story Luck Show"
+  venue: "Theater Wit"
+  link: "https://www.zeffy.com/en-US/ticketing/the-story-luck-show-sunday-feb-8th"
+
+- date: "2026-12-14"
+  time: "Time TBD"
+  type: storytelling
+  title: "The Garden Comedy Show"
+  link: "https://www.instagram.com/thegarden_chi/"
+  link_text: "Follow for updates"
+  note: "Tickets coming soon"
+
+- date: "2027-02-27"
+  time: "9:00 PM"
+  type: storytelling
+  title: "Variety Show"
+  venue: "My Buddy's"
+  note: "Tickets coming soon"

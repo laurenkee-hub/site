@@ -1,11 +1,12 @@
-<div class="ticket">
+{% assign t_label = include.label | strip %}{% assign t_meta = include.meta | strip %}{% assign t_desc = include.desc | strip %}
+<div class="ticket"{% if include.date %} data-date="{{ include.date }}"{% endif %}>
   <div class="ticket__main">
     {% if include.badge %}<div class="ticket__badge">{{ include.badge }}</div>{% endif %}
-    {% if include.label %}<div class="ticket__label">{{ include.label }}</div>{% endif %}
+    {% if t_label != "" %}<div class="ticket__label">{{ t_label }}</div>{% endif %}
     <h3 class="ticket__title">{{ include.title }}</h3>
-    {% if include.meta %}<div class="ticket__meta">{{ include.meta }}</div>{% endif %}
-    {% if include.desc %}<p class="ticket__desc">{{ include.desc }}</p>{% endif %}
-    {% if include.link and include.link_text %}<a href="{{ include.link }}">{{ include.link_text }} &rarr;</a>{% endif %}
+    {% if t_meta != "" %}<div class="ticket__meta">{{ t_meta }}</div>{% endif %}
+    {% if t_desc != "" %}<p class="ticket__desc">{{ t_desc }}</p>{% endif %}
+    {% if include.link %}<a href="{{ include.link }}">{{ include.link_text | default: "Tickets" }} &rarr;</a>{% endif %}
   </div>
-  <div class="ticket__stub">{{ include.stub | default: "Admit One" }}</div>
+  <div class="ticket__stub">{{ include.stub | strip | default: "Admit One" }}</div>
 </div>
