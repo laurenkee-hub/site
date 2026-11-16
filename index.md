@@ -132,7 +132,7 @@ permalink: /
     <h2 class="mt-0">Let's work together</h2>
     <p class="narrow" style="margin-left:auto; margin-right:auto;">Want to book Dealbreaker or have me tell a story at your event?</p>
     <div class="hero-actions" style="justify-content:center;">
-      <a class="btn btn--solid" href="mailto:{{ site.social.email }}">Get in touch</a>
+      <a class="btn btn--solid" href="{{ '/contact/' | relative_url }}">Get in touch</a>
       <a class="btn" href="{{ site.social.instagram }}">Follow on Instagram</a>
     </div>
   </div>
