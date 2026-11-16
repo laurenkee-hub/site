@@ -17,12 +17,11 @@ permalink: /contact/
     <div>
       <p class="eyebrow">Direct</p>
       <h2 class="mt-0">Reach out directly</h2>
-      <p>Prefer email? Write to <a href="mailto:{{ site.social.email }}">{{ site.social.email }}</a>.</p>
+      <p>Prefer email? Write to lauren.kee22 @ gmail . com.</p>
       <p>For time-sensitive bookings, include your preferred dates, venue or organization, and audience size in your first message — it speeds things up.</p>
 
       <h3>Follow along</h3>
       <ul>
-        <li><a href="mailto:{{ site.social.email }}">Email</a></li>
         {% if site.social.instagram and site.social.instagram != "" %}<li><a href="{{ site.social.instagram }}">Instagram</a></li>{% endif %}
         {% if site.social.youtube and site.social.youtube != "" %}<li><a href="{{ site.social.youtube }}">Video / performance clips</a></li>{% endif %}
       </ul>

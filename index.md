@@ -10,7 +10,7 @@ permalink: /
     <p class="tagline">Creator and performer of the solo show <strong>Dealbreaker</strong>.</p>
     <div class="hero-actions">
       <a class="btn btn--solid" href="#upcoming">Upcoming shows</a>
-      <a class="btn" href="mailto:{{ site.social.email }}">Get in touch</a>
+      <a class="btn" href="{{ '/contact/' | relative_url }}">Get in touch</a>
     </div>
   </div>
 </section>
