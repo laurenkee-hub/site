@@ -20,10 +20,11 @@
   {% capture label %}{% if s.label %}{{ s.label }}{% elsif when == "past" %}{{ s.date | date: "%b %-d, %Y" }}{% else %}{{ s.date | date: "%a, %b %-d, %Y" }}{% endif %}{% endcapture %}
   {% capture meta %}{% if when != "past" %}{{ s.venue }}{% if s.venue and s.time %} &middot; {% endif %}{{ s.time }}{% endif %}{% endcapture %}
   {% capture stub %}{% if include.stub_type %}{% if s.type == "dealbreaker" %}Dealbreaker{% else %}Storytelling{% endif %}{% endif %}{% endcapture %}
+  {% capture genre %}{% if s.genre %}{{ s.genre }}{% elsif s.type == "dealbreaker" %}solo show{% else %}storytelling{% endif %}{% endcapture %}
   {% if when == "past" %}
-    {% include ticket.html date=s.date badge=s.badge label=label title=s.title stub=stub %}
+    {% include ticket.html date=s.date badge=s.badge label=label title=s.title stub=stub genre=genre %}
   {% else %}
-    {% include ticket.html date=s.date badge=s.badge label=label title=s.title meta=meta desc=s.note link=s.link link_text=s.link_text stub=stub %}
+    {% include ticket.html date=s.date badge=s.badge label=label title=s.title meta=meta desc=s.note link=s.link link_text=s.link_text stub=stub genre=genre %}
   {% endif %}
 {% endfor %}
 </div>

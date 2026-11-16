@@ -40,7 +40,7 @@ permalink: /
     {% include show-list.html limit=3 stub_type=true empty="New dates coming soon. Follow along on Instagram for announcements." %}
     <p class="section-links">
       <a href="{{ '/dealbreaker/' | relative_url }}#upcoming">All Dealbreaker dates &rarr;</a>
-      <a href="{{ '/storytelling/' | relative_url }}#upcoming">All storytelling dates &rarr;</a>
+      <a href="{{ '/storytelling/' | relative_url }}#upcoming">All storytelling and comedy dates &rarr;</a>
     </p>
   </div>
 </section>

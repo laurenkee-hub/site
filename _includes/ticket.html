@@ -3,6 +3,7 @@
   <div class="ticket__main">
     {% if include.badge %}<div class="ticket__badge">{{ include.badge }}</div>{% endif %}
     {% if t_label != "" %}<div class="ticket__label">{{ t_label }}</div>{% endif %}
+    {% assign t_genres = include.genre | split: "," %}{% if t_genres.size > 0 %}<div class="ticket__pills">{% for g in t_genres %}{% assign gname = g | strip %}<span class="pill pill--{{ gname | slugify }}">{{ gname }}</span>{% endfor %}</div>{% endif %}
     <h3 class="ticket__title">{{ include.title }}</h3>
     {% if t_meta != "" %}<div class="ticket__meta">{{ t_meta }}</div>{% endif %}
     {% if t_desc != "" %}<p class="ticket__desc">{{ t_desc }}</p>{% endif %}

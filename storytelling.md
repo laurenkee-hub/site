@@ -15,7 +15,7 @@ permalink: /storytelling/
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Upcoming</p>
-      <h2>Where I'm telling stories next</h2>
+      <h2>Where I'm telling stories and jokes next</h2>
     </div>
     {% include show-list.html type="storytelling" empty="No storytelling dates on the calendar right now. Follow along on Instagram for the next one." %}
   </div>

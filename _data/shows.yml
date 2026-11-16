@@ -10,7 +10,12 @@
 #   label:     optional. How the date should read on the card
 #              (e.g. "Feb 14 & 15, 2026"). Leave it out to use the date.
 #   time:      optional, e.g. "7:00 PM" or "Time TBD"
-#   type:      dealbreaker  or  storytelling
+#   type:      dealbreaker  or  storytelling. Decides which page the show
+#              is listed on (comedy goes under storytelling too).
+#   genre:     optional. The pill on the card: storytelling, comedy, or
+#              solo show. Leave it out and Dealbreaker shows get
+#              "solo show", everything else gets "storytelling".
+#              For two pills, separate with a comma: "comedy, storytelling"
 #   title:     name of the show or event
 #   venue:     optional
 #   link:      optional. Tickets or info page
@@ -91,7 +96,17 @@
   link_text: "Venue info"
   note: "Tickets coming soon"
 
-# ---------------- STORYTELLING & OTHER SHOWS ----------------
+# ---------------- STORYTELLING, COMEDY & OTHER SHOWS ----------------
+
+- date: "2026-12-12"
+  label: "Dec 5 & 12, 2026"
+  time: "8:00 PM"
+  type: storytelling
+  genre: comedy
+  title: "Beast Women Series (Variety Show)"
+  venue: "The Labyrinth Club"
+  link: "https://www.eventbrite.com/e/beast-women-fall-series-2026-tickets-2004901205476"
+  note: "Get tickets for Night #3 (Dec 5) or Closing Night (Dec 12)"
 
 - date: "2026-12-13"
   time: "6:30 PM"
@@ -103,6 +118,7 @@
 - date: "2026-12-14"
   time: "Time TBD"
   type: storytelling
+  genre: comedy
   title: "The Garden Comedy Show"
   link: "https://www.instagram.com/thegarden_chi/"
   link_text: "Follow for updates"

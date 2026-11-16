@@ -463,6 +463,32 @@ p { margin: 0 0 1.2em; }
 }
 .ticket__main { position: relative; padding-top: 40px; }
 
+/* Genre pills on ticket cards (storytelling / comedy / solo show) */
+.ticket__pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
+.pill {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+.pill--comedy {
+  border-color: color-mix(in srgb, var(--accent-2) 55%, transparent);
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent-2) 10%, transparent);
+}
+.pill--solo-show {
+  border-color: currentColor;
+  color: inherit;
+  background: transparent;
+}
+
 
 /* =========================================================
    PRESS QUOTES GRID
