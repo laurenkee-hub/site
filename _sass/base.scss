@@ -474,20 +474,13 @@ p { margin: 0 0 1.2em; }
   line-height: 1;
   padding: 5px 10px;
   border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
-  color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: #fff;
+  background: #C9707A;
+  border: 1px solid #C9707A;
 }
-.pill--comedy {
-  border-color: color-mix(in srgb, var(--accent-2) 55%, transparent);
-  color: var(--accent-2);
-  background: color-mix(in srgb, var(--accent-2) 10%, transparent);
-}
-.pill--solo-show {
-  border-color: currentColor;
-  color: inherit;
-  background: transparent;
-}
+.pill--storytelling { background: #C9707A; border-color: #C9707A; }
+.pill--comedy       { background: #6E7C52; border-color: #6E7C52; }
+.pill--solo-show    { background: #8A5A7A; border-color: #8A5A7A; }
 
 
 /* =========================================================
