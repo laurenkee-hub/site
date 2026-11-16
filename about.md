@@ -20,7 +20,7 @@ permalink: /about/
       <p>I am a storyteller, solo performer, and producer. I started storytelling in 2021 after a bad breakup, and since then, have been soaking up Chicago's warm and welcoming storytelling scene. I love telling coming-of-age stories that help me reflect on big and small moments, and help others feel less alone.</p>
       <p>I'm the creator and performer of <a href="{{ '/dealbreaker/' | relative_url }}"><em>Dealbreaker</em></a>, a one-woman show about herpes, heartbreak, and the death of the one-night stand, directed by Francesca Sobrer with creative consultation by Lisa Burton.</p>
       <p>I'm committed to bringing storytelling to young people and lowering the barrier to entry for emerging artists.</p>
-      <p><a href="{{ site.social.instagram }}">Follow along on Instagram</a> or <a href="mailto:{{ site.social.email }}">email me at {{ site.social.email }}</a>.</p>
+      <p><a href="{{ site.social.instagram }}">Follow along on Instagram</a> or email me at lauren.kee22 @ gmail . com.</p>
     </div>
   </div>
 </section>
